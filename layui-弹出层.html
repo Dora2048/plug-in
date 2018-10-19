@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="layui-v2.4.3/layui/css/layui.css">
+</head>
+<body>
+<a href="javascript:;" id="linkAdr">查看地图</a>
+
+
+
+<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./layui-v2.4.3/layui/lay/modules/layer.js"></script>
+<script>
+  //地图弹出框
+  $("#linkAdr").on("click", function () {
+    //layer.msg('这是最常用的吧');
+    layer.open({
+      type: 2,
+      title: '',
+      fix: false,
+      maxmin: true,
+      shadeClose: true,
+      area: ['1100px', '600px'],
+      content: 'http://map.baidu.com/',
+    });
+  });
+</script>
+
+</body>
+</html>
